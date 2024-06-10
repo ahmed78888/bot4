@@ -1,0 +1,110 @@
+{
+    "name": "ميـوزك العالم",
+    "description": "- لـ تشغيـل الاغانـي والفيديـو والبثـوث المباشـرة فـي المكالمـات الصوتيـه والمرئيـة عـلى تيليجــرام",
+    "logo": "https://te.legra.ph/file/7994175c9bbea45fc7377.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "VenomX",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "API_ID": {
+        "description": "اكتـب ايدي ايبي المساعـد مثل ⦗ 26591385 ⦘",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "اكتب ايدي هاش المساعـد مثل ⦗ 321a2edfcf7f667acc70472a4d13ca20 ⦘",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "⦗ @Botfather ⦘ ↫ تـــوكـــن الـبـوت",
+        "value": "",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "كـود المونجـو",
+        "value": "mongodb+srv://veez:mega@cluster0.heqnd.mongodb.net/veez?retryWrites=true&w=majority",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "⦗ ايـــدي المطـــور ⦘ ↫ مطـــور بـــوت الميـــوزك",
+        "value": "6799500549",
+        "required": true
+        
+      },
+      "YOUTUBE_IMG_URL": {
+        "description": "قـم بـوضع كلشيه التشـغيل ⦗ تلكراف ميديا ⦘",
+        "value": "https://graph.org/file/8882cbd7cc786826d9ecb.jpg",
+        "required": true
+        
+      },
+      "SUPPORT_CHAT": {
+        "description": "ضـع معـرف قنـاتك",
+        "value": "https://t.me/vzo_a",
+        "required": true
+        
+      },
+      "Muntazer": {
+        "description": "  ضع قناة الاشتراك الاجباري ⦗ لاتنسى رفع البوت مشرف في القناة ⦘ .",
+        "value": "vzo_a",
+        "required": true
+        
+      },
+      "BOT_IMAGE": {
+        "description": "قـم بـوضع كلـشيه الاشتراك الاجباري ⦗ تلكراف ميديا ⦘",
+        "value": "https://te.legra.ph/file/4807752a011965b771900.jpg",
+        "required": false
+        
+      },
+      "START_IMG_URL": {
+        "description": "قـم بـوضع كلـشيه الاسـتارت ⦗ تلكراف ميديا ⦘",
+        "value": "https://te.legra.ph/file/bb717513daedb244d1428.jpg",
+        "required": false
+        
+      },
+      "STRING_SESSION": {
+        "description": "⦗ V1 ⦘ ↫ كـود جلسـة الحسـاب المساعـد لـ الميـوزك",
+        "value": "",
+        "required": true
+     },
+      "HEROKU_API_KEY": {
+        "description": "⦗ https://dashboard.heroku.com/account ⦘ ادخـل كود ايبـي كـي",
+        "value": "",
+        "required": true
+     },
+      "HEROKU_APP_NAME": {
+        "description": "⦗ اســـم التطبيـــق - نفـس اول مربـع بالقائمـة نسـخ لصـق حـروف انكلـش سمــول ⦗ صغيـره فقـط",
+        "value": "",
+        "required": true
+     },
+      "LOGGER_ID": {
+        "description": "ايـدي قروب السـجل",
+        "value": "-100",
+        "required": true
+        
+      },
+      "UPSTREAM_REPO": {
+        "description": "لا تـغيرها ابـدا",
+        "value": "https://github.com/Fox455664/Fox11",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+}
